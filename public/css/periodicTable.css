@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: rgb(33, 36, 41);
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.3;
+}
+
+.footer {
+    margin: 15%;
+}
+
+.header-container {
+    position: relative;
+}
+
+.header-img {
+    content: "";
+    z-index: -1;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*iss040e074977 NASA ID*/
+    background-image: url(//images-assets.nasa.gov/image/iss040e074977/iss040e074977~orig.jpg);
+    overflow: hidden;
+    height: 220px;
+    background-position: center;
+    border: none;
+    position: relative;
+}
+
+.header-content-bottom {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: black;
+}
+
+#selector-container {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    flex-wrap: wrap;
+    top: 10%;
+    left: 20%;
+}
+
+#selector-container div {
+    margin: 20px;
+    /* cursor: pointer; */
+    text-shadow: 0 0 4px currentColor;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(17, auto) 1fr;
+    width: fit-content;
+    margin: 3vh auto;
+    max-width: 100%;
+    grid-gap: 6px;
+    text-align: center;
+}
+
+.element {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    background: #1a1a1a;
+    transition-duration: 200ms;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+}
+
+.element:hover { 
+    transform: scale(1.3);
+}
+
+.element-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background: rgba(0, 0, 0, .8);
+    width: 800px;
+    height: 600px;
+    max-width: 80%;
+    box-shadow: 0 0 8px black;
+
+}
+
+.element-popup.active {
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+.popup-header {
+    padding: 15px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-title {
+    font-size: 45px;
+    text-shadow: 0 0 10px currentColor;
+}
+
+.popup-close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 45px;
+}
+
+.popup-body {
+    padding: 10px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 150px;
+    align-items: center;
+}
+.popup-body div {
+    padding: 20px;
+    color: white !important;
+
+}
+.popup-body h2 {
+    margin: 0;
+}
+
+.c-cat,
+.c-config,
+.c-disc {
+    width: 100%;
+}
+
+#overlay {
+    transition: 200ms ease-in-out;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .4);
+    pointer-events: none;
+    backdrop-filter: blur(6px);
+}
+
+#overlay.active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.element-2 {
+    grid-column-start: -2;
+}
+.element-5, .element-13 {
+    grid-column-start: 13;
+}
+
+.element-72, .element-104 {
+    grid-column-start: 4;
+
+}
+.element-57 {
+    grid-column-start: 3;
+    grid-row-start: 11;
+}
+.element-58 {
+    grid-column-start: 4;
+    grid-row-start: 11;
+}
+.element-59 {
+    grid-column-start: 5;
+    grid-row-start: 11;
+}
+.element-60 {
+    grid-column-start: 6;
+    grid-row-start: 11;
+}
+.element-61 {
+    grid-column-start: 7;
+    grid-row-start: 11;
+}
+.element-62 {
+    grid-column-start: 8;
+    grid-row-start: 11;
+}
+.element-63 {
+    grid-column-start: 9;
+    grid-row-start: 11;
+}
+.element-64 {
+    grid-column-start: 10;
+    grid-row-start: 11;
+}
+.element-65 {
+    grid-column-start:11;
+    grid-row-start: 11;
+}
+.element-66 {
+    grid-column-start: 12;
+    grid-row-start: 11;
+}
+.element-67 {
+    grid-column-start: 13;
+    grid-row-start: 11;
+}
+.element-68 {
+    grid-column-start: 14;
+    grid-row-start: 11;
+}
+.element-69 {
+    grid-column-start: 15;
+    grid-row-start: 11;
+}
+.element-70 {
+    grid-column-start: 16;
+    grid-row-start: 11;
+}
+
+.element-71 {
+    grid-column-start: 17;
+    grid-row-start: 11;
+}
+
+.element-89 {
+    grid-column-start: 3;
+    grid-row-start: 12;
+}
+.element-90 {
+    grid-column-start: 4;
+    grid-row-start: 12;
+}
+.element-91 {
+    grid-column-start: 5;
+    grid-row-start: 12;
+}
+.element-92 {
+    grid-column-start: 6;
+    grid-row-start: 12;
+}
+.element-93 {
+    grid-column-start: 7;
+    grid-row-start: 12;
+}
+.element-94 {
+    grid-column-start: 8;
+    grid-row-start: 12;
+}
+.element-95 {
+    grid-column-start: 9;
+    grid-row-start: 12;
+}
+.element-96 {
+    grid-column-start: 10;
+    grid-row-start: 12;
+}
+.element-97 {
+    grid-column-start:11;
+    grid-row-start: 12;
+}
+.element-98 {
+    grid-column-start: 12;
+    grid-row-start: 12;
+}
+.element-99 {
+    grid-column-start: 13;
+    grid-row-start: 12;
+}
+.element-100 {
+    grid-column-start: 14;
+    grid-row-start: 12;
+}
+.element-101 {
+    grid-column-start: 15;
+    grid-row-start: 12;
+}
+.element-102 {
+    grid-column-start: 16;
+    grid-row-start: 12;
+}
+.element-103 {
+    grid-column-start: 17;
+    grid-row-start: 12;
+}
+
+@media only screen and (max-width: 786px) {
+    #selector-container {
+        top: 10%;
+        left: 30%;
+    }
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/periodicTable.css" type="text/css">
+
+    <script src="/scripts/periodic-table.js"></script>
+    <%- include('../views/partials/head') %>
+</head>
+
+<body>
+    <div class="info-container">
+        <div id="selector-container">
+            <div id="nonmetal-select">Diatomic nonmetal</div>
+            <div id="alkali-select">Alkali metal</div>
+            <div id="alkali-earth-select">Alkali earth metal</div>
+            <div id="transition-metal-select">Transition metal</div>
+            <div id="post-transition-metal-select">Post-transition metal</div>
+            <div id="metalloid-select">Metalloid</div>
+            <div id="noble-select">Noble gas</div>
+            <div id="lanthanide-select">Lanthanides</div>
+            <div id="actinide-select">Actinides</div>
+            <div id="unknown-select">Unknown</div>
+        </div>
+        <div class="grid-container">
+            <div class="element element-1"></div>
+            <div class="element element-2"></div>
+            <div class="element element-3"></div>
+            <div class="element element-4"></div>
+            <div class="element element-5"></div>
+            <div class="element element-6"></div>
+            <div class="element element-7"></div>
+            <div class="element element-8"></div>
+            <div class="element element-9"></div>
+            <div class="element element-10"></div>
+            <div class="element element-11"></div>
+            <div class="element element-12"></div>
+            <div class="element element-13"></div>
+            <div class="element element-14"></div>
+            <div class="element element-15"></div>
+            <div class="element element-16"></div>
+            <div class="element element-17"></div>
+            <div class="element element-18"></div>
+            <div class="element element-19"></div>
+            <div class="element element-20"></div>
+            <div class="element element-21"></div>
+            <div class="element element-22"></div>
+            <div class="element element-23"></div>
+            <div class="element element-24"></div>
+            <div class="element element-25"></div>
+            <div class="element element-26"></div>
+            <div class="element element-27"></div>
+            <div class="element element-28"></div>
+            <div class="element element-29"></div>
+            <div class="element element-30"></div>
+            <div class="element element-31"></div>
+            <div class="element element-32"></div>
+            <div class="element element-33"></div>
+            <div class="element element-34"></div>
+            <div class="element element-35"></div>
+            <div class="element element-36"></div>
+            <div class="element element-37"></div>
+            <div class="element element-38"></div>
+            <div class="element element-39"></div>
+            <div class="element element-40"></div>
+            <div class="element element-41"></div>
+            <div class="element element-42"></div>
+            <div class="element element-43"></div>
+            <div class="element element-44"></div>
+            <div class="element element-45"></div>
+            <div class="element element-46"></div>
+            <div class="element element-47"></div>
+            <div class="element element-48"></div>
+            <div class="element element-49"></div>
+            <div class="element element-50"></div>
+            <div class="element element-51"></div>
+            <div class="element element-52"></div>
+            <div class="element element-53"></div>
+            <div class="element element-54"></div>
+            <div class="element element-55"></div>
+            <div class="element element-56"></div>
+            <div class="element element-57"></div>
+            <div class="element element-58"></div>
+            <div class="element element-59"></div>
+            <div class="element element-60"></div>
+            <div class="element element-61"></div>
+            <div class="element element-62"></div>
+            <div class="element element-63"></div>
+            <div class="element element-64"></div>
+            <div class="element element-65"></div>
+            <div class="element element-66"></div>
+            <div class="element element-67"></div>
+            <div class="element element-68"></div>
+            <div class="element element-69"></div>
+            <div class="element element-70"></div>
+            <div class="element element-71"></div>
+            <div class="element element-72"></div>
+            <div class="element element-73"></div>
+            <div class="element element-74"></div>
+            <div class="element element-75"></div>
+            <div class="element element-76"></div>
+            <div class="element element-77"></div>
+            <div class="element element-78"></div>
+            <div class="element element-79"></div>
+            <div class="element element-80"></div>
+            <div class="element element-81"></div>
+            <div class="element element-82"></div>
+            <div class="element element-83"></div>
+            <div class="element element-84"></div>
+            <div class="element element-85"></div>
+            <div class="element element-86"></div>
+            <div class="element element-87"></div>
+            <div class="element element-88"></div>
+            <div class="element element-89"></div>
+            <div class="element element-90"></div>
+            <div class="element element-91"></div>
+            <div class="element element-92"></div>
+            <div class="element element-93"></div>
+            <div class="element element-94"></div>
+            <div class="element element-95"></div>
+            <div class="element element-96"></div>
+            <div class="element element-97"></div>
+            <div class="element element-98"></div>
+            <div class="element element-99"></div>
+            <div class="element element-100"></div>
+            <div class="element element-101"></div>
+            <div class="element element-102"></div>
+            <div class="element element-103"></div>
+            <div class="element element-104"></div>
+            <div class="element element-105"></div>
+            <div class="element element-106"></div>
+            <div class="element element-107"></div>
+            <div class="element element-108"></div>
+            <div class="element element-109"></div>
+            <div class="element element-110"></div>
+            <div class="element element-111"></div>
+            <div class="element element-112"></div>
+            <div class="element element-113"></div>
+            <div class="element element-114"></div>
+            <div class="element element-115"></div>
+            <div class="element element-116"></div>
+            <div class="element element-117"></div>
+            <div class="element element-118"></div>
+        </div>
+        <div class="element-popup" id="popup">
+            <div class="popup-header">
+                <div class="popup-title" id="popup-title"></div>
+                <button data-close-button class="popup-close-button">&times;</button>
+            </div>
+            <div class="popup-body" id="popup-body">
+                <div class="container c-symbol">
+                    <h2>Symbol</h2>
+                    <p id="el-symbol"></p>
+                </div>
+                <div class="container c-mass">
+                    <h2>Mass</h2>
+                    <p id="el-mass"></p>
+                </div>
+                <div class="container c-melt">
+                    <h2>Melting point (Kelvin)</h2>
+                    <p id="el-melt"></p>
+                </div>
+                <div class="container c-cat">
+                    <h2>Table Category</h2>
+                    <p id="el-category"></p>
+                </div>
+                <div class="container c-config">
+                    <h2>Electron Configuration</h2>
+                    <p id="el-config"></p>
+                </div>
+                <div class="container c-disc">
+                    <h2>Discovered by</h2>
+                    <p id="el-discovered"></p>
+                </div>
+            </div>
+
+        </div>
+        <div id="overlay"></div>
+    </div>
+</body>
+
+</html>
